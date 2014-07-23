@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacto</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/contacto.css">
+  </head>
+  <body>
+    <script>
+      window.ContactoENV = {{ENV}};
+      window.EmberENV = window.ContactoENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/contacto.js"></script>
+    <script>
+      window.Contacto = require('contacto/app')['default'].create(ContactoENV.APP);
+    </script>
+  </body>
+</html>
