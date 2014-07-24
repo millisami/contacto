@@ -1,0 +1,16 @@
+<div class="col-md-4">
+  <div class="list-group">
+    {{#each contact in controller}}
+      {{#link-to "contacts.show" contact class="list-group-item"}}
+        <img class="img-circle" {{ bind-attr src=contact.avatar}}>
+        <span class="glyphicon glyphicon-file"></span> {{contact.fullName}} <span class="badge">{{contact.id}}</span>
+      {{/link-to}}
+    {{/each}}
+  </div>
+
+  <div class="bar bar-standard bar-footer">
+    <a {{action "refresh"}} {{bind-attr class=":icon :icon-refresh isRefreshing:spin :pull-right"}}></a>
+  </div>
+</div>
+
+<div class="col-md-8">Details</div>
