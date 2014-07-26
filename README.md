@@ -1,6 +1,6 @@
 # Contacto
 
-This README outlines the details of collaborating on this Ember application.
+An Ember.js app using Ember-Cli
 
 ## Installation
 
